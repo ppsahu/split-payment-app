@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/assets/favicon-20a6b0fb.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Split trip expenses among friends with least number of transactions."
+    />
+    <meta name='author' content='Sumit Wadhwa, keaton.sumit@gmail.com'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-351feca5.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABTZJREFUWEfFV1tInFcQ/ibKxlVc+6AxmocWKyaxiq0pEQOiFC+oRC3sD7U+GFMjvnghtPElGFLx2kC8PalFvBayayvGNiBaEB+akKqbqCTEFmtAjUlNtGFN4i45ZU7c9dddzUYMDuyy+/9z5nxn5pvLIbgoycnJOi8vrxQAXwD4jIg+EkJ8wMuJaFkI8Q+AcQC/m83m327cuPGfK6bpbUqKogQLIUoAfE1Enm/T5/dCiFUA3URUbTAY/tppzbYAFEXRCiG+J6JCABpXNnaisyaEqCeiUoPB8MKZDacA0tLSgg8ePPgLgLBdbrx12aTFYsno7e39e+sLBwCKonwKYACA3x5tbjPzBECiwWAwqe1uApCRkfGxu7v7H0S015vLPYUQT6xWa7TaE3YA6zG/RUThe3zyTeaEEBNEFGXjhB2AXq//gYi+ZW2NRoOwsDAEBARwiuHx48eYmpqC2Wx2wObr6wtvb2+XMT99+hTLy8tXjEbjdzKF+YtTDcAU7x0VFYXc3FzMz89jaGiIleHn54eYmBi8fPkSDx8+RG9vL1ZXOdOAuLg4hIeHy/css7OzEqxN+DBHjhzB0aNHceDAAbS3t6O/v38NwCecohKAXq9vJqJcPvXFixdx9+5dVFZWcszshtgT2dnZSElJQU5OziZvuLu7o7u7W+oyONtvtVuCgoJQWloKo9HIANh2i9FoPEfrFW6Bi8zly5dx/PhxVFVVYWxszMGtfILa2lqUlJTgxYuNtHYFABvLzMzE8+fPbQBWzWZzAOn1+q+I6Cc23tXVBTc3N1y6dAn37t1zGtczZ86gp6dHGrKJqwBOnjyJQ4cOSQDrWZHJAJqI6BxvzAAYyMDAAFpaWpwC8Pf3x8rKiuSDqwBiY2MxPDwsCc2f169f2wA0M4DbRPQ5P6moqEBwcLCMPaM0GAybNtqO6m/zAIetuLjYYbkQ4k9SFIUrlC+/DQ0NlSRkgyzM9JGREQwODkp27wYAn/7s2bOSwE7kX/aAhYje7MjFPywMeXl5OHz4sF2fPXL//n3J4ImJCQc7ag8sLi5iYWFB6mi1WoSEhEgvOgMghLA6AOCFzIMTJ04gPj4eERER8v86aaQ3mB/qFFUDuH79Oq5duyb1uUDxYbgGbAtAHQJnPuIilJqaiqSkJJkhLJ2dnejr63OJhAzi6tWrsrhtFwJJQlbU6XSYm5tzGurIyEhcuHBBeoNdXFRU5BIAViosLER9fb0zu7ftacg1/fTp02htbd2WbMzkU6dOwWKxICsry2UAaoPR0dF49OgRZmZmOIwyDWUh8vT0lGnoLF1sBhRF4b4Bbij5+fm7AsAZMTo6ijt37jCATHsp9vDw8Ozo6EB1dbVUcCYFBQWy6TARm5qa3hkAc6iurg7Nzc0wmUxvSjFbURSlRavVftPW1iarXFlZmex6auHWXFNTI3sA94Jnz569EwDenJtYYmIiysvLMT4+/mNPT0+uvR3rdLqp8+fPa7h9BgYG4ubNm5icnJRdj/+np6djaWkJDQ0NslXbhD1y7NgxJCQkyEccW3U75mccXq4v3AdYKioq1kwm00Y75odbBxLuitzHPTw88OrVK0xPT+PBgwcOkWGjPj4+2xJX/YL7ANeMpaWlK42NjRsDyXoYtABuAXivIxkALqWOIxmD2NehVJVq72Us54mYiHYey20g+GKi0Wh+3qsJmSdhq9X6pUsXE5Un9u9qpmbuvl1Ot+ZVWlqat0ajSV2/nkcS0YcAbPm3IoTgiYWv50Nra2u/9vX1bQyNOyTp/zFQlzfQa0NDAAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAm9JREFUOE+dU0FLYlEU/u7VciS0VS2yHEThEQYj40bbTDggA76FpQ9cuZIiDAZaBG0EEZdSG2co2rRR2yQYxCCM2A/QGKLSlUxgQRq0yBpncd9wL6M12cxi3uLBvefc73znO+cjePbNz8+/oZQuUUo9qqpaeJgQ0mCMlRhjW/l8/tvTJ6R3cLvd+snJyU0AEQD0OfDvMwOw02q1PpbL5R8CnP/m5uZejY2NfQHw7i8Pn18ftVqtDxxEAAQCgS2NRrNoNps5XVxcXIAxXgwwGAzQaDQDuJ1OZzuTySwR3vPo6Gh1dXWVHhwcoN1uY3Z2Fre3tygWi5iZmUEsFkM2m0Wj0YBer4csy9jd3WVnZ2dvSSAQ+CTL8rLFYkE6ne5X8ng8KJVKoJQil8shkUjg5ORExK1Wq2BVq9U+E0VRarIsSxw1Ho/j6upKJOl0OnS73QEAp9OJSqXSK1QnwWCwOzIyMry+vg6bzYZqtYrDw0Ocnp6KpB6DfD6Py8tL+Hw+rK2tiZiqqj8FACFkmF/Y7XZ4vV64XC7s7+9jb2+vD5BMJnF+fo5oNIqNjY1HAN6CJElSvV7v97+wsAC/349wODzQgslkQrPZxPj4OK6vr+tCxGAwuMwVv7u7EyAOhwORSAQrKysvishzFEXhDIWIDr/fX5EkiRYKBdzf3yMUCokRHh8fY3p6WoibyWTEGLkmvMWhoSGWSqWcYpEURdkihCxOTU2JOfNFenh4EGyMRiO0Wu3AImm12u10Or30X6usqupRu91+XGUOz800MTGxSSn9p5kYYzs3Nzd/mukpvyd2fq+q6mvhOEK+M8a+vmTnX5ckFRiGfvRGAAAAAElFTkSuQmCC">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
+    <title>SplitEase - Split trip expenses with ease</title>
+    <script type="module" crossorigin src="/assets/index-fcb33d0e.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    
+  </body>
+</html>
